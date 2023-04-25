@@ -23,9 +23,6 @@ export const ThemeBtn: FC = () => {
   const { currentTheme } = useAppSelector(s => s.theme)
   return (
     <View style={[styles.viewContent]}>
-      <CustomText style={styles.title}>
-        Aquí puedes cambiar el tema de la app!
-      </CustomText>
       <Switch
         value={currentTheme === 'light'}
         onValueChange={v => {
