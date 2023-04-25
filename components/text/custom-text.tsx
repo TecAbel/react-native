@@ -2,7 +2,7 @@ import { useCurrentTheme } from '@src/utils/themeHook'
 import { FC } from 'react'
 
 import { StyleProp, Text, TextStyle } from 'react-native'
-import { COLORS } from '../../common/colors'
+import { COLORS } from '@src/common/colors'
 
 type Props = {
   children: string

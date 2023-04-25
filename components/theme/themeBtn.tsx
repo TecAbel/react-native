@@ -5,7 +5,7 @@ import { useIsReady } from '@src/utils/isReadyHook'
 import { useCurrentTheme } from '@src/utils/themeHook'
 import { FC, useEffect } from 'react'
 import { Switch, View } from 'react-native'
-import { COLORS } from '../../common/colors'
+import { COLORS } from '@src/common/colors'
 import { CustomText } from '../text/custom-text'
 import { styles } from './themeBtn.styles'
 
