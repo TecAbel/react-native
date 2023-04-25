@@ -10,5 +10,10 @@ export const styles = StyleSheet.create({
     fontSize: 20,
     alignSelf: 'center',
     paddingTop: 10
+  },
+  title: {
+    fontSize: 22,
+    alignSelf: 'center',
+    paddingBottom: 20
   }
 })

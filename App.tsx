@@ -1,5 +1,5 @@
 import { Provider } from 'react-redux'
-import { HomePage } from './pages/home/home'
+import { HomePage } from './src/pages/home/home'
 import store from './state/store'
 
 export default function App() {

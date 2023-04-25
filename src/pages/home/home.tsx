@@ -1,8 +1,8 @@
 import { FC } from 'react'
 import { StyleSheet, SafeAreaView, StatusBar } from 'react-native'
-import { COLORS } from '../../common/colors'
-import { ThemeBtn } from '../../components/theme/themeBtn'
-import { useCurrentTheme } from '../../utils/themeHook'
+import { COLORS } from '../../../common/colors'
+import { ThemeBtn } from '../../../components/theme/themeBtn'
+import { useCurrentTheme } from '../../../utils/themeHook'
 
 export const HomePage: FC = () => {
   return (

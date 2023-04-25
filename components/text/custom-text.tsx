@@ -6,7 +6,7 @@ import { useCurrentTheme } from '../../utils/themeHook'
 
 type Props = {
   children: string
-  style: StyleProp<TextStyle>
+  style?: StyleProp<TextStyle>
 }
 
 export const CustomText: FC<Props> = ({ children, style }) => {
