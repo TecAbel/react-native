@@ -10,6 +10,7 @@ module.exports = function(api) {
             '@src': './src',
             '@pages': './src/pages',
             '@utils': './src/utils',
+            '@components': './src/components'
           }
         }
       ]
