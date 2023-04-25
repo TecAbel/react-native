@@ -5,33 +5,44 @@ import { SafeAreaProvider } from 'react-native-safe-area-context'
 import { SettingsPage } from '@src/pages/settings/settings'
 import { useCurrentTheme } from '@src/utils/themeHook'
 import { COLORS } from '@src/common/colors'
+import { FormLoginPage } from '@src/pages/forms/login/form-login'
 
 const Stack = createNativeStackNavigator()
+export enum AppRoutes {
+  settings = 'settings',
+  home = 'home',
+  formlogin = 'form-login'
+}
 export const MainRouter = () => {
   return (
     <SafeAreaProvider>
       <NavigationContainer>
-        <Stack.Navigator>
+        <Stack.Navigator
+          screenOptions={{
+            headerStyle: {
+              backgroundColor: useCurrentTheme(COLORS.light.bg, COLORS.dark.bg)
+            },
+            headerTitleStyle: {
+              color: useCurrentTheme(COLORS.light.text, COLORS.dark.text)
+            }
+          }}
+        >
           <Stack.Screen
-            name="home"
+            name={AppRoutes.home}
             component={HomePage}
             options={{ title: 'home', headerShown: false }}
           />
           <Stack.Screen
-            name="settings"
+            name={AppRoutes.settings}
             component={SettingsPage}
             options={{
-              title: 'Ajustes',
-              headerStyle: {
-                backgroundColor: useCurrentTheme(
-                  COLORS.light.bg,
-                  COLORS.dark.bg
-                )
-              },
-              headerTitleStyle: {
-                color: useCurrentTheme(COLORS.light.text, COLORS.dark.text)
-              }
+              title: 'Ajustes'
             }}
+          />
+          <Stack.Screen
+            name={AppRoutes.formlogin}
+            component={FormLoginPage}
+            options={{ title: 'form-login' }}
           />
         </Stack.Navigator>
       </NavigationContainer>
