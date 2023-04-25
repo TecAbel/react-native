@@ -1,11 +1,11 @@
 import AsyncStorage from '@react-native-async-storage/async-storage'
 import { ThemeActions } from '@src/state/reducers/theme.reducer'
 import { useAppDispatch, useAppSelector } from '@src/state/store'
+import { useIsReady } from '@src/utils/isReadyHook'
+import { useCurrentTheme } from '@src/utils/themeHook'
 import { FC, useEffect } from 'react'
 import { Switch, View } from 'react-native'
 import { COLORS } from '../../common/colors'
-import { useIsReady } from '../../utils/isReadyHook'
-import { useCurrentTheme } from '../../utils/themeHook'
 import { CustomText } from '../text/custom-text'
 import { styles } from './themeBtn.styles'
 

@@ -1,8 +1,8 @@
+import { useCurrentTheme } from '@src/utils/themeHook'
 import { FC } from 'react'
 
 import { StyleProp, Text, TextStyle } from 'react-native'
 import { COLORS } from '../../common/colors'
-import { useCurrentTheme } from '../../utils/themeHook'
 
 type Props = {
   children: string
