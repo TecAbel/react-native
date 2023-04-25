@@ -1,7 +1,7 @@
 import { useAsyncStorage } from '@react-native-async-storage/async-storage'
+import store from '@src/state/store'
 import { useEffect, useState } from 'react'
 import { Appearance } from 'react-native'
-import store from '../state/store'
 
 export const useCurrentTheme = (onLight: string, onDark: string) => {
   const { getItem } = useAsyncStorage('theme')
