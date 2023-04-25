@@ -1,8 +1,9 @@
 import { FC } from 'react'
-import { StyleSheet, SafeAreaView, StatusBar } from 'react-native'
+import { StyleSheet, StatusBar } from 'react-native'
 import { COLORS } from '@src/common/colors'
 import { useCurrentTheme } from '@utils/themeHook'
 import { ThemeBtn } from '@components/theme/themeBtn'
+import { SafeAreaView } from 'react-native-safe-area-context'
 
 export const HomePage: FC = () => {
   return (
