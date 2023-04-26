@@ -14,10 +14,12 @@ export const CustomText: FC<Props> = ({ children, style }) => {
     <Text
       style={[
         {
-          color: useCurrentTheme(COLORS.light.text, COLORS.dark.text),
           fontSize: 16
         },
-        style
+        style,
+        {
+          color: useCurrentTheme(COLORS.light.text, COLORS.dark.text)
+        }
       ]}
     >
       {children}

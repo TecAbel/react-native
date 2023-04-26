@@ -1,7 +1,7 @@
 import { useNavigation } from '@react-navigation/native'
 import { COLORS } from '@src/common/colors'
 import { Hellow } from '@src/components/hellow/hellow'
-import { AppRoutes } from '@src/routes/mainrouter'
+import { AppRoutes } from '@src/routes/routes.models'
 import { useCurrentTheme } from '@utils/themeHook'
 import { FC } from 'react'
 import {

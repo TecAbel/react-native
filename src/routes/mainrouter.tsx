@@ -6,13 +6,10 @@ import { SettingsPage } from '@src/pages/settings/settings'
 import { useCurrentTheme } from '@src/utils/themeHook'
 import { COLORS } from '@src/common/colors'
 import { FormLoginPage } from '@src/pages/forms/login/form-login'
+import { AppRoutes } from './routes.models'
 
 const Stack = createNativeStackNavigator()
-export enum AppRoutes {
-  settings = 'settings',
-  home = 'home',
-  formlogin = 'form-login'
-}
+
 export const MainRouter = () => {
   return (
     <SafeAreaProvider>
