@@ -67,6 +67,7 @@ export const FormLoginManagement = () => {
         rules={{ required: true }}
         render={({ field: { onChange, onBlur, value } }) => (
           <TextInput
+            secureTextEntry
             textContentType="password"
             style={styles.textInput}
             placeholderTextColor={COLORS.dark.inputPlaceHolder}
