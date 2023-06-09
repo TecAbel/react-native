@@ -64,7 +64,9 @@ export const FormLoginManagement = () => {
       <Controller
         name="password"
         control={control}
-        rules={{ required: true }}
+        rules={{
+          required: { value: true, message: 'La constraseña es obligatoria' }
+        }}
         render={({ field: { onChange, onBlur, value } }) => (
           <TextInput
             secureTextEntry
@@ -78,6 +80,9 @@ export const FormLoginManagement = () => {
           />
         )}
       />
+      {errors.password && triedSubmit && (
+        <Text style={styles.textError}>{errors.password.message}</Text>
+      )}
       <Button
         title="Ingresar"
         onPress={handleSubmit(onSubmit, onErrorSubmit)}
